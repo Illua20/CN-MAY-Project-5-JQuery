@@ -77,4 +77,30 @@ $(document).ready(function(){
         $(".text").removeClass('disabled')
       })
 
+    //   Product Tab
+    $('.product-item').hide()
+    $('.product-item:first').show()
+
+    $('.product-colors li a:not(:first)').addClass('inactive')
+
+    $('.product-colors li a').on('click',function(){
+        const n = $(this).attr('id')
+        if($(this).hasClass('inactive')){
+            $('.product-colors li a').addClass('inactive')
+            $(this).removeClass('inactive')
+        }
+
+    $('.product-item').hide()
+    $('#'+n+'image').fadeIn(500)    
+    })
+
+    $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slideToShow: 3,
+        slidetoScroll: 3,
+        centerMode: true,
+        centerPadding: '50px',
+
+    })
 })

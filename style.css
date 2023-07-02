@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .box{
     width: 100px;
     height: 100px;
@@ -6,4 +10,91 @@
 
 .disabled{
     opacity: 0.3;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.product-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item img{
+    width: 100%;
+}
+
+.product-colors{
+    display: flex;
+    gap: 30px;
+}
+
+.product-colors li{
+    list-style: none;
+}
+
+.product-colors li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #dedede;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0px;
+}
+
+.product-colors li .white{
+ background: #ecebe7;
+}
+
+.product-colors li .red{
+    background: #d4292a;
+}
+
+.product-colors li .blue{
+ background: #1095d4;
+}
+
+.product-colors li .black{
+    background: #050e11;
+}
+
+   .product-colors li .gray{
+    background: #6a767e;
+}
+
+/* Slick Slider */
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
 }
